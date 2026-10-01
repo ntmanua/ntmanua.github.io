@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manuarii NATANNI | CV – Maintenance industrielle</title>
+<meta name="description" content="CV de Manuarii NATANNI, en reconversion vers les métiers de la maintenance industrielle. Contrat de professionnalisation dans le Boulonnais, le Calaisis ou le Dunkerquois.">
+<link rel="canonical" href="https://manua.dev/">
+<meta property="og:type" content="profile">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Manuarii NATANNI | CV – Maintenance industrielle">
+<meta property="og:description" content="CV de Manuarii NATANNI, en reconversion vers les métiers de la maintenance industrielle. Contrat de professionnalisation dans le Boulonnais, le Calaisis ou le Dunkerquois.">
+<meta property="og:url" content="https://manua.dev/">
+<!-- Ajouter apercu.png (1200 × 630 px) à côté de index.html pour l’aperçu de partage. -->
+<meta property="og:image" content="https://manua.dev/apercu.png">
+<meta property="og:image:alt" content="CV de Manuarii NATANNI, maintenance industrielle">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231A6B5C'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-family='Arial,sans-serif' font-size='26' font-weight='bold' fill='white'%3EMN%3C/text%3E%3C/svg%3E">
+<style>
+
+/* Couleurs et polices : identité du CV, plus deux nuances pour le site. */
+:root {
+--green: #1A6B5C;
+--deep: #123E36;
+--green-feature: #186455;
+--rule: #8FB8AF;
+--ink: #1F2933;
+--body: #2B2B2B;
+--muted: #5A6472;
+--white: #FFFFFF;
+--cream: #F5F5EF;
+--pale: #E5EFE9;
+--font: Arial, Helvetica, sans-serif;
+--font-label: "Courier New", Courier, monospace;
+--width: 1160px;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 96px; }
+body { margin: 0; background: var(--cream); color: var(--ink); font: 16px/1.6 var(--font); }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { font: inherit; cursor: pointer; }
+a { color: inherit; text-underline-offset: 5px; }
+a:hover { text-decoration-thickness: 2px; }
+button:focus-visible, a:focus-visible { outline: 3px solid var(--green); outline-offset: 6px; }
+img { display: block; max-width: 100%; }
+[hidden] { display: none !important; }
+.shell { width: min(var(--width), calc(100% - 96px)); margin-inline: auto; }
+
+.skip { position: fixed; top: -90px; left: 20px; z-index: 100; background: var(--white); padding: 12px 20px; }
+.skip:focus { top: 15px; }
+.print-cv { display: none; }
+.site-header { position: sticky; top: 0; z-index: 20; background: var(--cream); border-bottom: 1px solid var(--rule); }
+.nav-inner { min-height: 78px; display: flex; align-items: center; justify-content: flex-end; gap: 28px; }
+.site-nav { display: flex; align-items: center; gap: 27px; }
+.site-nav a { font-size: 14px; text-decoration: none; padding-block: 9px; border-bottom: 1px solid transparent; transition: border-color .2s; }
+.site-nav a:hover, .site-nav a[aria-current="location"] { color: var(--green); border-color: var(--green); }
+.read-progress { height: 2px; position: absolute; bottom: -1px; left: 0; width: 100%; transform: scaleX(0); transform-origin: left; background: var(--green); }
+.hero { padding-block: 74px 54px; display: grid; grid-template-columns: 1.45fr 1fr; gap: 68px; align-items: center; }
+.eyebrow { margin: 0 0 17px; color: var(--green); font: 12px/1.5 var(--font-label); letter-spacing: .1em; text-transform: none; }
+.hero h1 { margin: 0 0 18px; font-size: clamp(36px, 4.2vw, 52px); line-height: 1.12; letter-spacing: -.045em; font-weight: 400; }
+.hero h1 span { display: inline; }
+.hero h1 .accent { color: var(--green); }
+.hero-role { max-width: 530px; margin: 0; font-size: 20px; line-height: 1.4; }
+.hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 22px; margin-top: 28px; }
+.button { display: inline-flex; align-items: center; justify-content: center; gap: 17px; padding: 13px 21px; min-height: 48px; border: 1px solid var(--green); background: var(--green); color: var(--white); border-radius: 3px; font-size: 14px; text-decoration: none; transition: background .2s, transform .2s; }
+.button:hover { background: var(--deep); transform: translateY(-2px); }
+.photo-panel { position: relative; align-self: stretch; display: flex; flex-direction: column; justify-content: center; padding-top: 15px; }
+.portrait-frame { position: relative; background: var(--green); border-radius: 160px 160px 4px 4px; min-height: 390px; aspect-ratio: .82; overflow: hidden; display: grid; place-items: center; }
+.portrait-frame img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 35%; }
+.portrait-initials { color: var(--pale); font-size: clamp(90px, 12vw, 170px); letter-spacing: -.08em; line-height: 1; font-weight: 700; }
+.portrait-art { position: absolute; inset: 0; width: 100%; height: 100%; color: var(--rule); opacity: .55; pointer-events: none; }
+.portrait-caption { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px 14px; margin-top: 16px; font: 12px var(--font-label); color: var(--green); }
+.portrait-caption span:nth-child(n+2) { color: var(--muted); }
+
+.site-section { padding-block: 90px; }
+.section-head { display: grid; grid-template-columns: 1fr 2.3fr; gap: 50px; align-items: start; margin-bottom: 40px; }
+.site-section h2 { font-size: clamp(28px, 3vw, 36px); line-height: 1.07; letter-spacing: -.055em; font-weight: 400; margin: 0; }
+
+.experience-band { background: var(--green); color: var(--white); }
+
+.experience-band :focus-visible { outline-color: var(--white); }
+.education-grid { display: grid; grid-template-columns: 1fr 1.65fr; gap: 50px; }
+.education-feature { align-self: start; padding: 21px 0; background: transparent; border-top: 2px solid var(--green); }
+.education-feature .date { margin: 0 0 8px; font: 12px var(--font-label); color: var(--green); }
+.education-feature h3 { font-size: 26px; font-weight: 400; line-height: 1.25; margin: 0 0 20px; letter-spacing: -.04em; }
+
+.education-feature .note { font-style: normal; margin: 0; font-size: 16px; color: var(--muted); }
+.education-list article { border-top: 1px solid var(--rule); padding-block: 21px; }
+.education-list .date { font: 12px var(--font-label); color: var(--green); margin: 0 0 8px; }
+.education-list h3 { font-size: 20px; font-weight: 400; letter-spacing: -.025em; line-height: 1.35; margin: 0 0 6px; }
+
+.education-list .detail, .education-list .note { color: var(--muted); font-size: 14px; margin: 0; }
+.education-list .note { font-style: italic; margin-top: 5px; }
+.interest-section { padding-block: 36px; border-top: 1px solid var(--rule); background: var(--cream); }
+
+.site-footer { margin-top: 0; margin-bottom: 32px; padding-top: 24px; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; gap: 20px; font: 12px var(--font-label); color: var(--muted); }
+.site-footer a { color: var(--green); }
+.reveal { transition: opacity .45s ease, transform .45s ease; }
+.reveal-pending { opacity: 0; transform: translateY(16px); }
+@media (min-width: 1500px) {
+.hero { padding-top: 90px; } }
+@media (max-width: 1000px) {
+  .shell { width: calc(100% - 56px); }
+  .site-nav { gap: 17px; }
+  .hero { gap: 35px; padding-top: 55px; }
+  .hero h1 { font-size: clamp(36px, 4.5vw, 48px); }
+  .portrait-frame { min-height: 340px; }
+  .section-head { grid-template-columns: 1fr 2fr; gap: 35px; }
+  .education-grid { gap: 30px; }
+}
+@media (max-width: 720px) {
+  html { scroll-padding-top: 128px; }
+  .shell { width: calc(100% - 40px); }
+  .nav-inner { min-height: 100px; padding-block: 12px; flex-wrap: wrap; gap: 8px; }
+  .site-nav { width: 100%; justify-content: flex-end; flex-wrap: wrap; gap: 6px 14px; }
+  .site-nav a { font-size: 12px; padding-block: 5px; }
+  .hero { grid-template-columns: 1fr; gap: 42px; padding-block: 38px 30px; }
+  .hero h1 { font-size: clamp(34px, 8vw, 44px); margin-bottom: 25px; }
+  .hero-role { font-size: 18px; }
+  .hero-actions { gap: 15px; }
+  .photo-panel { width: min(100%, 360px); margin-inline: auto; }
+  .portrait-frame { min-height: 0; aspect-ratio: 1.03; border-radius: 140px 140px 4px 4px; }
+  .portrait-caption { font-size: 11px; }
+
+  .site-section { padding-block: 56px; }
+  .section-head { grid-template-columns: 1fr; gap: 22px; margin-bottom: 25px; }
+
+  .experience-band .section-head { margin-bottom: 30px; }
+
+  .education-feature { padding: 21px 0; }
+
+  .site-footer { margin-top: 40px; font-size: 11px; }
+}
+@media (max-width: 360px) {
+  .shell { width: calc(100% - 32px); }
+  .hero h1 { font-size: 34px; }
+  .hero-actions { align-items: flex-start; flex-direction: column; }
+  .site-nav a { font-size: 11px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .reveal-pending { opacity: 1; transform: none; }
+  .button:hover { transform: none; }
+}
+/* Présentation personnelle dans le hero. */
+.hero-search { margin: 22px 0 0; font-size: 17px; line-height: 1.6; max-width: 560px; }
+.hero-intro { margin: 15px 0 0; font-size: 15px; line-height: 1.6; color: var(--muted); max-width: 560px; }
+
+@media (max-width: 720px) {
+
+  .hero-search { font-size: 16px; }
+
+}
+
+/* Trois lignes compactes, avec la même hiérarchie pour chaque rubrique. */
+.personal-grid { display: flex; flex-direction: column; gap: 22px; }
+.personal-row { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 32px; align-items: baseline; }
+.personal-row h2 { margin: 0; color: var(--green); font-size: 20px; line-height: 1.5; letter-spacing: -.025em; font-weight: 400; }
+.personal-inline { list-style: none; padding: 0; margin: 0; color: var(--ink); font-size: 15px; line-height: 1.7; }
+.personal-inline li { display: inline; }
+.personal-inline li + li::before { content: " · "; color: var(--green); padding-inline: 5px; }
+@media (max-width: 720px) {
+  .personal-row { grid-template-columns: 1fr; gap: 7px; }
+  .personal-grid { gap: 22px; }
+}
+.experience-grid .education-feature { color: var(--white); border-top-color: var(--highlight); }
+.experience-grid .education-feature .date { color: var(--pale); }
+.experience-grid .education-feature ul { color: var(--pale); font-size: 15px; padding-left: 19px; margin: 0; }
+.experience-grid .education-feature a { color: var(--white); }
+.experience-grid .education-feature :focus-visible { outline-color: var(--white); }
+.experience-grid .education-list .date, .experience-grid .education-list .detail { color: var(--pale); }
+.experience-grid .education-list h3 .detail { font-size: 16px; }
+.experience-grid .education-list ul { color: var(--pale); padding-left: 19px; margin: 10px 0 0; font-size: 15px; }
+@media (max-width: 720px) {
+
+  .education-grid { grid-template-columns: 1fr; gap: 22px; }
+}
+
+/* Coordonnées dans le hero. */
+.contact-details { display: flex; flex-wrap: wrap; gap: 10px 26px; margin: 22px 0 0; font-size: 16px; font-style: normal; }
+.contact-details a { color: var(--green); overflow-wrap: anywhere; }
+@media (max-width: 720px) {
+  .contact-details { flex-direction: column; align-items: flex-start; }
+}
+
+/* La photo reste unique et suit le nom dans le hero sur petit écran. */
+@media (max-width: 720px) {
+  .hero-copy .photo-panel { margin-block: 24px 32px; }
+}
+
+@page { size: A4 portrait; margin: 0; }
+
+/* Document A4 indépendant : modifier aussi son contenu lors d'une mise à jour du CV.
+   Dans la boîte d'impression : échelle 100 %, sans marges ni en-têtes/pieds de page. */
+@media print {
+  html, body { width: 210mm; margin: 0; background: var(--white); color: var(--body); font: 9.96pt/1.18 var(--font); print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .screen-site, .skip { display: none !important; }
+  .print-cv { display: grid; width: 210mm; min-height: 297mm; grid-template-columns: 142mm 68mm; }
+  .print-cv .primary { padding: 10mm 7.8mm 12mm 10mm; }
+  .print-cv .identity { margin-bottom: 5mm; }
+  .print-cv h1 { margin: 0 0 1.4mm; color: var(--ink); font-size: 21.96pt; line-height: 1.15; }
+  .print-cv h1 span { color: var(--green); }
+  .print-cv .job-title { font-size: 12pt; line-height: 1.35; margin: 0 0 3.2mm; }
+  .print-cv .contact { font-style: normal; line-height: 1.32; }
+  .print-cv .contact p { margin: 0; }
+  .print-cv .contact a { display: block; width: fit-content; color: var(--green); }
+  .print-cv a { text-decoration: none; }
+  .print-cv .section { margin-top: 5.5mm; }
+  .print-cv h2 { font-size: 12pt; line-height: 1.25; font-weight: 700; text-transform: uppercase; color: var(--green); margin: 0 0 2.3mm; padding-bottom: 1.4mm; border-bottom: .25mm solid var(--rule); break-after: avoid; page-break-after: avoid; }
+  .print-cv .profile-text { margin: 0; color: var(--ink); text-align: justify; line-height: 1.16; }
+  .print-cv article { margin-bottom: 3.2mm; break-inside: avoid; page-break-inside: avoid; }
+  .print-cv article:last-child { margin-bottom: 0; }
+  .print-cv .date { color: var(--green); margin: 0; }
+  .print-cv h3 { font-size: 10.56pt; font-weight: 400; line-height: 1.18; margin: 0; }
+  .print-cv h3 strong { font-weight: 700; }
+  .print-cv .detail, .print-cv .note { color: var(--muted); font-size: 9.48pt; margin: 1px 0 0; }
+  .print-cv .note { font-style: italic; }
+  .print-cv ul { margin: 1mm 0 0; padding-left: 3.8mm; }
+  .print-cv .sidebar { background: var(--green); color: var(--white); padding: 8.2mm 5.9mm 12mm; }
+  .print-cv .portrait { width: 45mm; height: 45mm; margin: 0 auto 7.7mm; border-radius: 50%; overflow: hidden; background: var(--white); color: var(--green); display: grid; place-items: center; position: relative; }
+  .print-cv .portrait-placeholder { font-size: 35pt; font-weight: 700; }
+  .print-cv .portrait img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .print-cv .sidebar .section { margin-top: 7mm; }
+  .print-cv .sidebar .section:first-of-type { margin-top: 0; }
+  .print-cv .sidebar h2 { color: var(--white); }
+  .print-cv .sidebar ul { margin-top: 0; padding-left: 3.6mm; }
+  .print-cv .sidebar li { margin-bottom: 1mm; }
+  .print-cv .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<div class="screen-site">
+<header class="site-header">
+  <div class="shell nav-inner">
+    <nav class="site-nav" aria-label="Navigation principale">
+      <a href="#accueil">Profil</a>
+      <a href="#experience">Expériences</a><a href="#formation">Formations</a><a href="#competences">Compétences</a>
+    </nav>
+  </div>
+  <div class="read-progress" aria-hidden="true"></div>
+</header>
+<main id="main">
+<section class="hero shell" id="accueil" aria-labelledby="hero-title">
+  <div class="hero-copy">
+    <p class="eyebrow">CV en ligne</p>
+    <h1 id="hero-title"><span class="accent">Manuarii</span> NATANNI</h1>
+    <p class="hero-role"><strong>En reconversion vers les métiers de la maintenance industrielle</strong></p>
+    <p class="hero-intro">Après un parcours scientifique et une expérience en gestion d'entreprise, je souhaite exercer un métier technique et concret, sur le terrain.</p>
+    <p class="hero-search">J'aimerais rejoindre une entreprise du Boulonnais, du Calaisis ou du Dunkerquois dans le cadre d'un contrat de professionnalisation. Je suis disponible immédiatement.</p>
+    <div class="hero-actions">
+      <a class="button"
+   href="cv.pdf"
+   download="CV-Manuarii-NATANNI.pdf">
+  Télécharger mon CV
+</a>
+    </div>
+    <address class="contact-details">
+      <a href="mailto:manuarii.natanni@gmail.com">manuarii.natanni@gmail.com</a>
+      <a href="tel:+33648162147">06 48 16 21 47</a>
+    </address>
+  </div>
+  <div class="photo-panel">
+    <!-- Ajouter photo.jpg à côté de index.html. Les initiales servent de repli. -->
+    <div class="portrait-frame">
+      <svg class="portrait-art" viewBox="0 0 400 490" fill="none" aria-hidden="true"><path d="M-40 360H95V95H305V395H440M-40 385H120V120H280V420H440" stroke="currentColor"/><circle cx="95" cy="95" r="7" stroke="currentColor"/><circle cx="305" cy="395" r="7" stroke="currentColor"/></svg>
+      <span class="portrait-initials" aria-label="Initiales de Manuarii NATANNI">MN</span>
+      <img src="photo.jpg" alt="Portrait de Manuarii NATANNI" width="600" height="730" data-photo hidden fetchpriority="high">
+    </div>
+    <div class="portrait-caption"><span>Boulogne-sur-Mer, 62200</span><span>31 ans</span><span>Permis B et véhicule personnel</span></div>
+  </div>
+</section>
+<section class="experience-band site-section" id="experience" aria-labelledby="experience-heading">
+  <div class="shell">
+    <div class="section-head reveal"><span aria-hidden="true"></span><h2 id="experience-heading">Expériences</h2></div>
+    <div class="education-grid experience-grid">
+    <article class="education-feature reveal"><p class="date">01/2025 – Présent</p><h3>Développeur web &amp; rédacteur – freelance</h3><ul><li>Contribution au développement d'applications web, dont <a href="https://peakshi.com">peakshi.com</a></li><li>Participation aux réunions d'entreprise et rédaction des comptes rendus</li></ul></article>
+    <div class="education-list reveal"><article><p class="date">03/2024 – 08/2024</p><h3>Agent de production agroalimentaire – <span class="detail">Manpower | Boulogne-sur-Mer (62)</span></h3><ul><li>Préparation et conditionnement de produits sur ligne de production</li><li>Respect strict des normes d'hygiène, de qualité et des cadences</li></ul></article><article><p class="date">02/2019 – 08/2022</p><h3>Manager – Restaurant La Chaloupe | <span class="detail">Wissant (62)</span></h3><ul><li>Promu manager ; encadrement d’équipe, organisation et garantie de la qualité de service</li></ul></article><article><p class="date">04/2017 – 01/2019</p><h3>Cofondateur et gérant – Restaurant Guàma | <span class="detail">Lille (59)</span></h3><ul><li>Création et pilotage de l’activité : business plan, travaux, ouverture, achats, tarification, recrutement et encadrement d’équipe</li></ul></article></div>
+    </div>
+  </div>
+</section>
+<section class="site-section shell" id="formation" aria-labelledby="education-heading">
+  <div class="section-head reveal"><span aria-hidden="true"></span><h2 id="education-heading">Formations</h2></div>
+  <div class="education-grid">
+    <article class="education-feature reveal"><p class="date">08/2026 – Présent</p><h3>Électrotechnique – formation personnelle en cours</h3><p class="note">Programme : fondamentaux électriques, triphasé, moteurs, protections, lecture de schémas, mesure, sécurité et diagnostic.</p></article>
+    <div class="education-list reveal"><article><p class="date">04/2023 – 02/2024</p><h3>Titre professionnel : Développeur web et web mobile</h3><p class="detail">Simplon Hauts-de-France - certification RNCP</p></article>
+<article><p class="date">09/2016 – 05/2017</p><h3>Génie mécanique et productique (DUT) – année suivie, non validée</h3><p class="detail">IUT A Lille 1 (59)</p><p class="note">Stage de fin non effectué pour créer mon entreprise.</p></article>
+<article><p class="date">09/2013 – 06/2016</p><h3>Classe préparatoire aux grandes écoles – filière PTSI / PT</h3><p class="detail">Lycée Gustave Eiffel, Armentières (59)</p></article>
+<article><p class="date">2013</p><h3>Bac S, option Sciences de l'ingénieur</h3><p class="detail">Lycée Édouard Branly, Boulogne-sur-Mer (62)</p></article></div>
+  </div>
+</section>
+<div class="interest-section site-section">
+  <div class="shell personal-grid">
+    <section class="personal-row reveal" id="competences" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Compétences</h2>
+      <ul class="personal-inline"><li>Analyse et résolution de problèmes</li><li>Lecture de documentation technique</li><li>Normes, qualité et consignes</li><li>Coordination et suivi d'activité</li><li>Bureautique et outils numériques</li></ul>
+    </section>
+    <section class="personal-row reveal" id="langues" aria-labelledby="language-heading">
+      <h2 id="language-heading">Langues</h2>
+      <ul class="personal-inline"><li>Français : langue maternelle</li><li>Anglais : niveau B1</li></ul>
+    </section>
+    <section class="personal-row reveal" id="interets" aria-labelledby="interests-heading">
+      <h2 id="interests-heading">Centres d'intérêt</h2>
+      <ul class="personal-inline"><li>Bricolage : meubles en bois brut, peinture, petite plomberie</li><li>Course à pied : 5 sorties/semaine</li><li>Musique : mixage sur contrôleur</li><li>Lecture : sciences et science-fiction</li></ul>
+    </section>
+  </div>
+</div>
+<footer class="shell site-footer"><a href="#accueil">Retour en haut</a></footer>
+</main>
+</div>
+
+<!-- Document A4 exclusivement destiné à l’impression. -->
+<div class="cv print-cv" id="paper-cv">
+<div class="primary">
+<header class="identity">
+<h1><span>Manuarii</span> NATANNI</h1>
+<p class="job-title">TECHNICIEN DE MAINTENANCE INDUSTRIELLE<br>– CONTRAT DE PROFESSIONNALISATION</p>
+<address class="contact"><a href="tel:+33648162147">06 48 16 21 47</a><a href="mailto:manuarii.natanni@gmail.com">manuarii.natanni@gmail.com</a><p>31 ans · Boulogne-sur-Mer, 62200</p><p>Permis B et véhicule personnel · disponible immédiatement</p><p>Mobilité : Boulonnais, Calaisis, Dunkerquois</p></address>
+</header>
+<section class="section reveal" id="paper-profil" aria-labelledby="paper-profil-title"><h2 id="paper-profil-title">PROFIL</h2><p class="profile-text">Parcours scientifique et expérience en gestion d'entreprise. J'aime analyser, comprendre et résoudre des problèmes concrets. Je souhaite mettre ces compétences au service de la maintenance industrielle, dans le cadre d’un contrat de professionnalisation, pour contribuer à la performance des installations et m'investir dans la durée.</p></section>
+<section class="section reveal" id="paper-formation" aria-labelledby="paper-formation-title"><h2 id="paper-formation-title">FORMATION</h2>
+<article><p class="date">08/2026 – Présent</p><h3><strong>Électrotechnique</strong> – formation personnelle en cours</h3><p class="note">Programme : fondamentaux électriques, triphasé, moteurs, protections, lecture de schémas, mesure, sécurité et diagnostic.</p></article>
+<article><p class="date">04/2023 – 02/2024</p><h3><strong>Titre professionnel : Développeur web et web mobile</strong></h3><p class="detail">Simplon Hauts-de-France - certification RNCP</p></article>
+<article><p class="date">09/2016 – 05/2017</p><h3><strong>Génie mécanique et productique (DUT)</strong> – année suivie, non validée</h3><p class="detail">IUT A Lille 1 (59)</p><p class="note">Stage de fin non effectué pour créer mon entreprise.</p></article>
+<article><p class="date">09/2013 – 06/2016</p><h3><strong>Classe préparatoire aux grandes écoles</strong> – filière PTSI / PT</h3><p class="detail">Lycée Gustave Eiffel, Armentières (59)</p></article>
+<article><p class="date">2013</p><h3><strong>Bac S, option Sciences de l'ingénieur</strong></h3><p class="detail">Lycée Édouard Branly, Boulogne-sur-Mer (62)</p></article>
+</section>
+<section class="section reveal" id="paper-experience" aria-labelledby="paper-experience-title"><h2 id="paper-experience-title">EXPÉRIENCE PROFESSIONNELLE</h2>
+<article><p class="date">01/2025 – Présent</p><h3><strong>Développeur web &amp; rédacteur</strong> – freelance</h3><ul><li>Contribution au développement d'applications web, dont <a href="https://peakshi.com">peakshi.com</a></li><li>Participation aux réunions d'entreprise et rédaction des comptes rendus</li></ul></article>
+<article><p class="date">03/2024 – 08/2024</p><h3><strong>Agent de production agroalimentaire</strong> – <span class="detail">Manpower | Boulogne-sur-Mer (62)</span></h3><ul><li>Préparation et conditionnement de produits sur ligne de production</li><li>Respect strict des normes d'hygiène, de qualité et des cadences</li></ul></article>
+<article><p class="date">02/2019 – 08/2022</p><h3><strong>Manager</strong> – Restaurant La Chaloupe | <span class="detail">Wissant (62)</span></h3><ul><li>Promu manager ; encadrement d’équipe, organisation et garantie de la qualité de service</li></ul></article>
+<article><p class="date">04/2017 – 01/2019</p><h3><strong>Cofondateur et gérant</strong> – Restaurant Guàma | <span class="detail">Lille (59)</span></h3><ul><li>Création et pilotage de l’activité : business plan, travaux, ouverture, achats, tarification, recrutement et encadrement d’équipe</li></ul></article>
+</section>
+</div>
+<aside class="sidebar" aria-label="Compétences, langues et centres d’intérêt">
+<!-- Ajouter photo.jpg à côté de index.html. Sans photo, les initiales s'affichent. -->
+<div class="portrait"><span class="portrait-placeholder" aria-label="Initiales de Manuarii NATANNI">MN</span><img src="photo.jpg" alt="Portrait de Manuarii NATANNI" width="400" height="400" hidden data-photo></div>
+<section class="section reveal" id="paper-competences" aria-labelledby="paper-competences-title"><h2 id="paper-competences-title">COMPÉTENCES</h2><ul><li>Analyse et résolution de problèmes</li><li>Lecture de documentation technique</li><li>Normes, qualité et consignes</li><li>Coordination et suivi d'activité</li><li>Bureautique et outils numériques</li></ul></section>
+<section class="section reveal" id="paper-langues" aria-labelledby="paper-langues-title"><h2 id="paper-langues-title">LANGUES</h2><ul><li>Français : langue maternelle</li><li>Anglais : niveau B1</li></ul></section>
+<section class="section reveal" id="paper-interets" aria-labelledby="paper-interets-title"><h2 id="paper-interets-title">CENTRES D'INTÉRÊT</h2><ul><li>Bricolage : meubles en bois brut, peinture, petite plomberie</li><li>Course à pied : 5 sorties/semaine</li><li>Musique : mixage sur contrôleur</li><li>Lecture : sciences et science-fiction</li></ul></section>
+</aside>
+</div>
+<script>
+/* Impression distincte. Le navigateur conserve le choix du nom du PDF. */
+const screenTitle = document.title;
+window.addEventListener('beforeprint', () => { document.title = 'CV-Manuarii-NATANNI'; });
+window.addEventListener('afterprint', () => { document.title = screenTitle; });
+document.querySelectorAll('[data-print]').forEach(button => {
+  button.addEventListener('click', () => window.print());
+});
+/* Portrait facultatif : aucun cadre cassé si photo.jpg n'a pas encore été ajouté. */
+document.querySelectorAll('[data-photo]').forEach(photo => {
+  const show = () => {
+    photo.hidden = false;
+    photo.parentElement.querySelector('span').hidden = true;
+    const art = photo.parentElement.querySelector('svg');
+    if (art) art.hidden = true;
+  };
+  photo.addEventListener('load', show);
+  if (photo.complete && photo.naturalWidth) show();
+});
+/* Déplacer le même portrait avec sa légende pour conserver l'ordre de lecture. */
+const heroLayout = document.querySelector('.hero');
+const heroCopy = heroLayout.querySelector('.hero-copy');
+const portraitPanel = heroLayout.querySelector('.photo-panel');
+const heroSubtitle = heroCopy.querySelector('.hero-role');
+const smallScreen = window.matchMedia('(max-width: 720px)');
+function placePortrait() {
+  if (smallScreen.matches) heroCopy.insertBefore(portraitPanel, heroSubtitle);
+  else heroLayout.appendChild(portraitPanel);
+}
+smallScreen.addEventListener('change', placePortrait);
+placePortrait();
+
+/* Sans JS, tout est visible. Seules les sections hors écran sont animées. */
+const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+let revealObserver;
+const revealAll = () => {
+  if (revealObserver) revealObserver.disconnect();
+  document.querySelectorAll('.reveal-pending').forEach(el => el.classList.remove('reveal-pending'));
+};
+if ('IntersectionObserver' in window && !motion.matches) {
+  revealObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.remove('reveal-pending');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.screen-site .reveal').forEach(el => {
+    if (el.getBoundingClientRect().top > window.innerHeight) {
+      el.classList.add('reveal-pending');
+      revealObserver.observe(el);
+    }
+  });
+}
+motion.addEventListener('change', () => { if (motion.matches) revealAll(); });
+/* Navigation : privilégier la section la plus visible sous le menu fixe.
+   Le dernier lien couvre aussi les langues et les centres d'intérêt. */
+const progress = document.querySelector('.read-progress');
+const header = document.querySelector('.site-header');
+const links = Array.from(document.querySelectorAll('.site-nav a'));
+const sections = links.map(link => {
+  const target = document.querySelector(link.getAttribute('href'));
+  return target.closest('.interest-section') || target;
+});
+let queued = false;
+function updateScroll() {
+  const viewportHeight = window.innerHeight;
+  const total = Math.max(0, document.documentElement.scrollHeight - viewportHeight);
+  const scrollTop = Math.max(0, window.scrollY);
+  const ratio = total > 0 ? Math.min(1, scrollTop / total) : 1;
+  progress.style.transform = `scaleX(${ratio})`;
+
+  // La hauteur réelle du menu varie entre ordinateur et mobile.
+  const visibleTop = Math.max(0, Math.min(viewportHeight, header.getBoundingClientRect().bottom));
+  function visibleHeight(section) {
+    const rect = section.getBoundingClientRect();
+    return Math.max(0, Math.min(rect.bottom, viewportHeight) - Math.max(rect.top, visibleTop));
+  }
+
+  let active = -1;
+  let largestVisible = 0;
+  sections.forEach((section, i) => {
+    const visible = visibleHeight(section);
+    if (visible > largestVisible) {
+      largestVisible = visible;
+      active = i;
+    }
+  });
+
+  // Une dernière section courte ne peut pas toujours remonter jusqu'au menu.
+  const bottomTolerance = Math.max(24, viewportHeight * 0.02);
+  if (total > 0 && total - scrollTop <= bottomTolerance) {
+    active = links.length - 1;
+  }
+  links.forEach((link, i) => {
+    if (i === active) link.setAttribute('aria-current', 'location');
+    else link.removeAttribute('aria-current');
+  });
+  queued = false;
+}
+function scheduleScroll() {
+  if (!queued) { queued = true; requestAnimationFrame(updateScroll); }
+}
+window.addEventListener('scroll', scheduleScroll, { passive: true });
+window.addEventListener('resize', scheduleScroll);
+window.addEventListener('hashchange', scheduleScroll);
+window.addEventListener('load', scheduleScroll);
+updateScroll();
+</script>
+</body>
+</html>
