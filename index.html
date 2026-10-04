@@ -29,6 +29,7 @@
 --white: #FFFFFF;
 --cream: #F5F5EF;
 --pale: #E5EFE9;
+--highlight: #8FB8AF;
 --font: Arial, Helvetica, sans-serif;
 --font-label: "Courier New", Courier, monospace;
 --width: 1160px;
@@ -227,6 +228,19 @@ img { display: block; max-width: 100%; }
   .print-cv .sidebar li { margin-bottom: 1mm; }
   .print-cv .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
 }
+
+/* Décor d'engrenages (assets/mechanical-hero.js) : canvas fixe DERRIÈRE le contenu.
+   Le texte n'est jamais recouvert ; seul le fond est légèrement teinté.
+   Sans WebGL, sans JS ou à l'impression, rien ne change. */
+.gear-backdrop { position: fixed; inset: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; opacity: 0; transition: opacity .8s ease; }
+/* Quand le décor est actif, les fonds crème identiques au fond de page deviennent
+   transparents, et la bande verte est appliquée en « multiply » : les engrenages
+   y apparaissent en vert plus profond, ton sur ton.
+   #1B6F62 × crème #F5F5EF = #1A6B5C, la couleur exacte de la bande. */
+.gears-live .interest-section { background: transparent; }
+.gears-live .experience-band { position: relative; background: transparent; }
+.gears-live .experience-band::before { content: ""; position: absolute; inset: 0; z-index: -1; background: #1B6F62; mix-blend-mode: multiply; pointer-events: none; }
+@media print { .gear-backdrop { display: none !important; } }
 </style>
 </head>
 <body>
@@ -248,7 +262,7 @@ img { display: block; max-width: 100%; }
     <h1 id="hero-title"><span class="accent">Manuarii</span> NATANNI</h1>
     <p class="hero-role"><strong>En reconversion vers la maintenance industrielle</strong></p>
     <p class="hero-intro">Parcours scientifique et expérience en gestion d'entreprise. J'aime analyser, comprendre et résoudre des problèmes concrets.</p>
-    <p class="hero-search">J'aimerais rejoindre une entreprise du Boulonnais, du Calaisis ou du Dunkerquois dans le cadre d'un contrat de professionnalisation. Je suis disponible immédiatement.</p>
+    <p class="hero-search">Je souhaite mettre mes compétences au service de la maintenance industrielle, dans le cadre d’un contrat de professionnalisation, pour contribuer à la fiabilité des équipements et m'investir dans la durée.</p>
     <div class="hero-actions">
       <a class="button"
         href="cv.pdf"
@@ -318,7 +332,7 @@ img { display: block; max-width: 100%; }
 <p class="job-title">TECHNICIEN DE MAINTENANCE INDUSTRIELLE<br>– CONTRAT DE PROFESSIONNALISATION</p>
 <address class="contact"><a href="tel:+33648162147">06 48 16 21 47</a><a href="mailto:manuarii.natanni@gmail.com">manuarii.natanni@gmail.com</a><p>31 ans · Boulogne-sur-Mer, 62200</p><p>Permis B et véhicule personnel · disponible immédiatement</p><p>Mobilité : Boulonnais, Calaisis, Dunkerquois</p></address>
 </header>
-<section class="section reveal" id="paper-profil" aria-labelledby="paper-profil-title"><h2 id="paper-profil-title">PROFIL</h2><p class="profile-text">Parcours scientifique et expérience en gestion d'entreprise. J'aime analyser, comprendre et résoudre des problèmes concrets. Je souhaite mettre ces compétences au service de la maintenance industrielle, dans le cadre d’un contrat de professionnalisation, pour contribuer à la performance des installations et m'investir dans la durée.</p></section>
+<section class="section reveal" id="paper-profil" aria-labelledby="paper-profil-title"><h2 id="paper-profil-title">PROFIL</h2><p class="profile-text">Parcours scientifique et expérience en gestion d'entreprise. J'aime analyser, comprendre et résoudre des problèmes concrets. Je souhaite mettre ces compétences au service de la maintenance industrielle, dans le cadre d’un contrat de professionnalisation, pour contribuer à la fiabilité des équipements et m'investir dans la durée.</p></section>
 <section class="section reveal" id="paper-formation" aria-labelledby="paper-formation-title"><h2 id="paper-formation-title">FORMATION</h2>
 <article><p class="date">08/2026 – Présent</p><h3><strong>Électrotechnique</strong> – formation personnelle en cours</h3><p class="note">Programme : fondamentaux électriques, triphasé, moteurs, protections, lecture de schémas, mesure, sécurité et diagnostic.</p></article>
 <article><p class="date">04/2023 – 02/2024</p><h3><strong>Titre professionnel : Développeur web et web mobile</strong></h3><p class="detail">Simplon Hauts-de-France - certification RNCP</p></article>
@@ -451,5 +465,6 @@ window.addEventListener('hashchange', scheduleScroll);
 window.addEventListener('load', scheduleScroll);
 updateScroll();
 </script>
+<script src="assets/mechanical-hero.js" defer></script>
 </body>
 </html>
